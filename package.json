@@ -10,6 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.1.2"
+    "@astrojs/react": "^3.0.2",
+    "@astrojs/tailwind": "^5.0.0",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "astro": "^3.1.2",
+    "flowbite": "^1.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "tailwindcss": "^3.3.3",
+    "wouter": "^2.11.0"
   }
 }

@@ -1,0 +1,179 @@
+---
+import imgForm from "../img/muro.jpg";
+
+import Modal from "../components/Modal.astro";
+---
+
+<script>
+  // Get DOM Elements
+  const modal = document.querySelector("#my-modal") as HTMLElement;
+  const modalBtn = document.querySelector("#modal-btn");
+  const closeBtn = document.querySelector(".close");
+
+  // Events
+  modalBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  window.addEventListener("click", outsideClick);
+
+  // Open
+  function openModal() {
+    modal.style.display = "block";
+  }
+
+  // Close
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Close If Outside Click
+  function outsideClick(e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<section
+  class="calculador grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-10 px-8 w-full bg-green-700 rounded-xl"
+>
+  <aside class="imagen sm:col-span-2 relative -top-20 md:top-0 md:py-2">
+    <img src={imgForm.src} class="rounded-xl" />
+  </aside>
+  <article
+    class="md:col-span-2 justify-center items-center relative -top-16 md:top-0"
+  >
+    <h1
+      class="text-xl md:text-xl lg:text-xl text-center py-2 text-stone-200 font-bold tracking-wider"
+    >
+      Calculador de Divisiones
+    </h1>
+    <p class="font-bold px-2 text-justify">
+      Calcula aquí los materiales que vas a necesitar para hacer una división en
+      un ambiente.
+      <br />
+      <br />
+       Para calcular el área de tu división, multiplica los metros de
+      <strong class="text-stone-200">alto</strong>
+       por los metros de
+      <strong class="text-stone-200">ancho</strong>
+       y tendra los
+      <strong class="text-stone-200">m2 de la superficie</strong>.
+    </p>
+
+    <div class="flex py-4 justify-center items-center">
+      <div class="flex justify-center items-center py-3 w-full">
+        <input
+          type="number"
+          name="superficie"
+          placeholder="10"
+          class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-full appearance-none placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm max-w-[220px] mr-4"
+        />
+        <span class="relative -left-12 font-bold p-0">m<sup>2</sup></span>
+      </div>
+      <button
+        id="modal-btn"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 z-10"
+        type="button"
+      >
+        Calcular</button
+      >
+    </div>
+  </article>
+  <div id="my-modal" class="modalContent">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <Modal />
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  :root {
+    --modal-duration: 1s;
+    --modal-color: #428bca;
+  }
+  body {
+    line-height: 1.6;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .modalContent {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow:
+      0 5px 8px 0 rgba(0, 0, 0, 0.2),
+      0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+  }
+
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>

@@ -1,0 +1,98 @@
+<ul class="background">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<style>
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #202428;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .background li {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #1c2024;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 3s ease-in forwards infinite;
+  }
+  undefined .background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 49vw;
+    top: 27vh;
+  }
+
+  .background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 66vw;
+    top: 91vh;
+  }
+
+  .background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 98vw;
+    top: 11vh;
+    border-color: #23272c;
+  }
+
+  .background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 37vw;
+    top: 13vh;
+  }
+
+  .background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 56vw;
+    top: 85vh;
+  }
+
+  .background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 3vw;
+    top: 73vh;
+    border-color: #23272c;
+  }
+
+  .background li:nth-child(6) {
+    animation-delay: 12s;
+    left: 16vw;
+    top: 59vh;
+    border-color: #23272c;
+  }
+
+  .background li:nth-child(7) {
+    animation-delay: 14s;
+    left: 81vw;
+    top: 46vh;
+    border-color: #23272c;
+  }
+</style>
