@@ -1,6 +1,6 @@
 ---
 import imgForm from "../img/muro.jpg";
-
+import InputBtn from "./InputBtn.astro";
 import Cuerpomodal from "./Cuerpomodal.astro";
 ---
 
@@ -8,7 +8,7 @@ import Cuerpomodal from "./Cuerpomodal.astro";
   class="calculador grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-10 px-8 w-full bg-green-700 rounded-xl"
 >
   <aside class="imagen sm:col-span-2 relative -top-20 md:top-0 md:py-2">
-    <img src={imgForm.src} class="rounded-xl" />
+    <img src={imgForm.src} alt="Muro" class="rounded-xl" />
   </aside>
   <article
     class="md:col-span-2 justify-center items-center relative -top-16 md:top-0"
@@ -32,22 +32,7 @@ import Cuerpomodal from "./Cuerpomodal.astro";
     </p>
 
     <div class="flex py-4 justify-center items-center">
-      <div class="flex justify-center items-center py-3 w-full">
-        <input
-          type="number"
-          name="superficie"
-          placeholder="10"
-          class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-full appearance-none placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm max-w-[220px] mr-4"
-        />
-        <span class="relative -left-12 font-bold p-0">m<sup>2</sup></span>
-      </div>
-      <button
-        id="modal-btn"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        type="button"
-      >
-        Calcular</button
-      >
+      <InputBtn />
       <Cuerpomodal />
     </div>
   </article>
