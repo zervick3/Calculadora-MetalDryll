@@ -1,6 +1,11 @@
 {
   "name": "proyecto1",
   "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./astro": "./MyAstroComponent.astro",
+    "./react": "./MyReactComponent.jsx"
+  },
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",

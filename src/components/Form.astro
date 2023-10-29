@@ -1,7 +1,6 @@
 ---
 import imgForm from "../img/muro.jpg";
-import InputBtn from "./InputBtn.astro";
-import Cuerpomodal from "./Cuerpomodal.astro";
+import InputForm from "./InputForm.jsx";
 ---
 
 <section
@@ -31,9 +30,6 @@ import Cuerpomodal from "./Cuerpomodal.astro";
       <strong class="text-stone-200">m2 de la superficie</strong>.
     </p>
 
-    <div class="flex py-4 justify-center items-center">
-      <InputBtn />
-      <Cuerpomodal />
-    </div>
+    <InputForm client:load />
   </article>
 </section>
