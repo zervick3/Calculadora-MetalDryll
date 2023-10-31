@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Linkscalculadora from "../components/Linkscalculadora.astro";
 
-import Msgform from "../components/msgform.astro";
 import TitleDeCalculos from "../components/TitleDeCalculos.astro";
+import ContainerStandar from "../components/Standar/ContainerStandar.astro";
 ---
 
 <Layout title="Calculando Plancha Standar">
@@ -13,9 +13,9 @@ import TitleDeCalculos from "../components/TitleDeCalculos.astro";
     </div>
 
     <div class="col-span-2">
-      <TitleDeCalculos />
+      <TitleDeCalculos title="PLANCHA STANDAR" />
       <div class="container__form grid grid-cols-1 p-6 m-auto rounded-md">
-        <Msgform />
+        <ContainerStandar />
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Modal from "../Moda/Modal";
-import { useModal } from "../hooks/useModal";
+import Modal from "../../Moda/Modal";
+import { useModal } from "../../hooks/useModal";
 import TablaResultadoSt from "./TablaResultadoSt";
 
 function InputForm() {
@@ -23,6 +23,7 @@ function InputForm() {
     e.preventDefault();
   };
   const Planchas = parseFloat(form.area) * 0.74;
+
   const Parante = parseFloat(form.area) * 0.8;
   const Riel = parseFloat(form.area) * 0.35;
   const tornillo = parseFloat(form.area) * 0.02;
@@ -32,22 +33,6 @@ function InputForm() {
   const cintapapel = parseFloat(form.area) * 0.04;
   const masilla = parseFloat(form.area) * 0.06;
   const lija = parseFloat(form.area) * 0.04;
-
-  const title1 = "GYPLAC (STD) 1.22X2.44MM(1/2)";
-  const title2 = "PARANTE 3 VOLCANMETAL/CONSTRUTEK 89x38x0.45mmx3m";
-  const title3 = "RIEL 3 VOLCANMETAL/CONSTRUTEK 90x25x0.45mmx3m";
-  const title4 = "TORNILLO PLANCHA 6x1 P/FINA";
-  const title5 = "TORNILLO METAL WAFER 8X1/2 P/FINA";
-  const title6 = "CLAVO 1 PARA DISPARO";
-  const title7 = "FULMINANTE CALIBRE 0.22";
-  const title8 = "CINTA PAPEL METALDRLL 50mm x 90m";
-  const title9 = "MASILLA GYPLAC BALDE X 27 KG";
-  const title10 = "LIJA Nº120 AL AGUA";
-  const title11 = "";
-  const title12 = "";
-  const title13 = "";
-  const title14 = "";
-  const title15 = "";
 
   const [isOpenModal, openModal1, closeModal1] = useModal(false);
   const [Calcular, setCalcular] = useState({
@@ -95,16 +80,6 @@ function InputForm() {
           cintapapel={cintapapel.toFixed(2)}
           masilla={masilla.toFixed(2)}
           lija={lija.toFixed(2)}
-          title1={title1}
-          title2={title2}
-          title3={title3}
-          title4={title4}
-          title5={title5}
-          title6={title6}
-          title7={title7}
-          title8={title8}
-          title9={title9}
-          title10={title10}
         />
       </Modal>
     </div>

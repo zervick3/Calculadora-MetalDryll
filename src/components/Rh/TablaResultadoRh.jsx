@@ -1,5 +1,6 @@
-function TablaResultado({
+function TablaResultadoRh({
   Planchas,
+  Plancharh,
   Parante,
   Riel,
   tornillo,
@@ -9,21 +10,6 @@ function TablaResultado({
   cintapapel,
   masilla,
   lija,
-  title1,
-  title2,
-  title3,
-  title4,
-  title5,
-  title6,
-  title7,
-  title8,
-  title9,
-  title10,
-  title11,
-  title12,
-  title13,
-  title14,
-  title15,
 }) {
   return (
     <div className="overflow-auto rounded-lg shadow">
@@ -44,70 +30,77 @@ function TablaResultado({
         <tbody className="divide-y divide-gray-100">
           <tr className="bg-white">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title1}
+              GYPLAC (STD) 1.22x2.44x12.7MM.(1/2¨)
             </td>
             <td className="p-3 text-sm text-gray-700">PL</td>
             <td className="p-3 text-sm text-gray-700">{Planchas}</td>
           </tr>
+          <tr className="bg-white">
+            <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
+              GYPLAC (RH) SANITARIO 1.22x2.44x12.7MM.(1/2¨)
+            </td>
+            <td className="p-3 text-sm text-gray-700">PL</td>
+            <td className="p-3 text-sm text-gray-700">{Plancharh}</td>
+          </tr>
           <tr className="bg-gray-50">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title2}
+              PARANTE 3" VOLCAN/CONSTRUTEK 89x38x0.45mmx3m
             </td>
             <td className="p-3 text-sm text-gray-700">PZA</td>
             <td className="p-3 text-sm text-gray-700">{Parante}</td>
           </tr>
           <tr className="bg-white">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title3}
+              RIEL 3" VOLCAN/CONSTRUTEK 90x25x0.45mmx3m
             </td>
             <td className="p-3 text-sm text-gray-700">PZA</td>
             <td className="p-3 text-sm text-gray-700">{Riel}</td>
           </tr>
           <tr className="bg-gray-50">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title4}
+              TORNILLO PLANCHA METALDRYLL 6x1 P/FINA
             </td>
             <td className="p-3 text-sm text-gray-700">MILL</td>
             <td className="p-3 text-sm text-gray-700">{tornillo}</td>
           </tr>
           <tr className="bg-white">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title5}
+              TORNILLO METAL WAFER 8X1/2" P/FINA
             </td>
             <td className="p-3 text-sm text-gray-700">MILL</td>
             <td className="p-3 text-sm text-gray-700">{wafer}</td>
           </tr>
           <tr className="bg-gray-50">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title6}
+              CLAVO 1" PARA DISPARO
             </td>
             <td className="p-3 text-sm text-gray-700">CTO</td>
             <td className="p-3 text-sm text-gray-700">{clavo}</td>
           </tr>
           <tr className="bg-white">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title7}
+              FULMINANTE CALIBRE 0.22 METALDRYLL
             </td>
             <td className="p-3 text-sm text-gray-700">CTO</td>
             <td className="p-3 text-sm text-gray-700">{fulminante}</td>
           </tr>
           <tr className="bg-gray-50">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title8}
+              CINTA PAPEL METALDRLL 50mm x 90m
             </td>
             <td className="p-3 text-sm text-gray-700">ROLL</td>
             <td className="p-3 text-sm text-gray-700">{cintapapel}</td>
           </tr>
           <tr className="bg-white">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title9}
+              MASILLA GYPLAC BALDE X 27 KG
             </td>
             <td className="p-3 text-sm text-gray-700">BALD</td>
             <td className="p-3 text-sm text-gray-700">{masilla}</td>
           </tr>
           <tr className="bg-gray-50">
             <td className="p-3 text-xs md:text-sm text-gray-700 whitespace-wrap">
-              {title10}
+              LIJA Nº120 AL AGUA
             </td>
             <td className="p-3 text-sm text-gray-700">PZA</td>
             <td className="p-3 text-sm text-gray-700">{lija}</td>
@@ -118,4 +111,4 @@ function TablaResultado({
   );
 }
 
-export default TablaResultado;
+export default TablaResultadoRh;
