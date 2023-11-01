@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Linkscalculadora from "../components/Linkscalculadora.astro";
+
+import TitleDeCalculos from "../components/TitleDeCalculos.astro";
+
+import ContainerCieloRaso from "../components/CieloRaso/ContainerCieloRaso.astro";
+---
+
+<Layout title="Calculando Plancha Standar">
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2">
+    <div class="col-span-1">
+      <Linkscalculadora />
+    </div>
+
+    <div class="col-span-2">
+      <TitleDeCalculos title="CIELO RASO " />
+      <div class="container__form grid grid-cols-1 p-6 m-auto rounded-md">
+        <!-- etapa 1 fibrecemento-->
+        <ContainerCieloRaso />
+      </div>
+    </div>
+  </div>
+</Layout>

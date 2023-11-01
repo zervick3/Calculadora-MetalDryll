@@ -1,0 +1,37 @@
+---
+import imgForm from "../img/muro.jpg";
+import InputFormFibrocemento from "../Fibrecemento/InputFormFibrocemento";
+---
+
+<section
+  class="calculador grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-10 px-8 w-full bg-green-700 rounded-xl"
+>
+  <aside class="imagen sm:col-span-2 relative -top-20 md:top-0 md:py-2">
+    <img src={imgForm.src} alt="Muro" class="rounded-xl" />
+  </aside>
+  <article
+    class="md:col-span-2 justify-center items-center relative -top-16 md:top-0"
+  >
+    <h1
+      class="text-xl md:text-xl lg:text-xl text-center py-2 text-stone-200 font-bold tracking-wider"
+    >
+      Calculador de Divisiones
+    </h1>
+    <p class="font-bold px-2 text-justify">
+      Calcula aquí los materiales que vas a necesitar para hacer una división en
+      un ambiente.
+      <br />
+      <br />
+       Para calcular el área de tu división, multiplica los metros de
+      <strong class="text-stone-200">alto</strong>
+       por los metros de
+      <strong class="text-stone-200">ancho</strong>
+       y tendra los
+      <strong class="text-stone-200">m2 de la superficie</strong>.
+    </p>
+    <!-- contenedor del formulario -->
+    <InputFormFibrocemento client:load />
+
+    <!-- <-> -->
+  </article>
+</section>
