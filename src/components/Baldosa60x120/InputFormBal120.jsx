@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Modal from "../../Moda/Modal";
 import { useModal } from "../../hooks/useModal";
-import TablaResultadoRh from "./TablaResultadoRh";
+import TablaResultadoBal120 from "./TablaResultadoBal120";
 
-function InputFormRh() {
+function InputFormBal120() {
   const [form, setForm] = useState({
     area: "",
   });
@@ -22,17 +22,14 @@ function InputFormRh() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  const Planchas = parseFloat(form.area) * 0.74;
-  const Plancharh = parseFloat(form.area) * 0.74;
-  const Parante = parseFloat(form.area) * 0.8;
-  const Riel = parseFloat(form.area) * 0.35;
-  const tornillo = parseFloat(form.area) * 0.02;
-  const wafer = parseFloat(form.area) * 0.01;
-  const clavo = parseFloat(form.area) * 0.02;
-  const fulminante = parseFloat(form.area) * 0.02;
-  const cintapapel = parseFloat(form.area) * 0.04;
-  const masilla = parseFloat(form.area) * 0.06;
-  const lija = parseFloat(form.area) * 0.04;
+  const baldosa = parseFloat(form.area) * 0.75;
+  const principales = parseFloat(form.area) * 0.23;
+  const secundario = parseFloat(form.area) * 1.36;
+  const angulos = parseFloat(form.area) * 0.27;
+  const alambre = parseFloat(form.area) * 0.06;
+  const clavo = parseFloat(form.area) * 0.09;
+  const fulminante = parseFloat(form.area) * 0.09;
+  const clavoAcero = parseFloat(form.area) * 2.18;
 
   const [isOpenModal, openModal1, closeModal1] = useModal(false);
   const [Calcular, setCalcular] = useState({
@@ -69,18 +66,15 @@ function InputFormRh() {
         </form>
       </div>
       <Modal isOpen={isOpenModal} closeModal={closeModal1}>
-        <TablaResultadoRh
-          Planchas={Math.ceil(Planchas)}
-          Plancharh={Math.ceil(Plancharh)}
-          Parante={Math.ceil(Parante)}
-          Riel={Math.ceil(Riel)}
-          tornillo={Math.ceil(tornillo)}
-          wafer={Math.ceil(wafer)}
+        <TablaResultadoBal120
+          baldosa={Math.ceil(baldosa)}
+          principales={Math.ceil(principales)}
+          secundario={Math.ceil(secundario)}
+          angulos={Math.ceil(angulos)}
+          alambre={Math.ceil(alambre)}
           clavo={Math.ceil(clavo)}
           fulminante={Math.ceil(fulminante)}
-          cintapapel={Math.ceil(cintapapel)}
-          masilla={Math.ceil(masilla)}
-          lija={Math.ceil(lija)}
+          clavoAcero={Math.ceil(clavoAcero)}
         />
       </Modal>
     </div>
@@ -88,4 +82,4 @@ function InputFormRh() {
   );
 }
 
-export default InputFormRh;
+export default InputFormBal120;

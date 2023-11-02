@@ -71,18 +71,17 @@ function InputFormFibrocemento() {
       </div>
       <Modal isOpen={isOpenModal} closeModal={closeModal1}>
         <TablaResultadoFibro
-          Planchas={Planchas.toFixed(2)}
-          Plancharh={Plancharh.toFixed(2)}
-          Parante={Parante.toFixed(2)}
-          Riel={Riel.toFixed(2)}
-          tornillo={tornillo.toFixed(2)}
-          wafer={wafer.toFixed(2)}
-          clavo={clavo.toFixed(2)}
-          fulminante={fulminante.toFixed(2)}
-          cintapapel={cintapapel.toFixed(2)}
-          masilla={masilla.toFixed(2)}
-          lija={lija.toFixed(2)}
-          sika={sika.toFixed(2)}
+          Planchas={Math.ceil(Planchas)}
+          Parante={Math.ceil(Parante)}
+          Riel={Math.ceil(Riel)}
+          tornillo={Math.ceil(tornillo)}
+          wafer={Math.ceil(wafer)}
+          clavo={Math.ceil(clavo)}
+          fulminante={Math.ceil(fulminante)}
+          cintapapel={Math.ceil(cintapapel)}
+          masilla={Math.ceil(masilla)}
+          lija={Math.ceil(lija)}
+          sika={Math.ceil(sika)}
         />
       </Modal>
     </div>
