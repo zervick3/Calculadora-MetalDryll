@@ -66,7 +66,11 @@ function InputFormBal60() {
           />
         </form>
       </div>
-      <Modal isOpen={isOpenModal} closeModal={closeModal1}>
+      <Modal
+        isOpen={isOpenModal}
+        closeModal={closeModal1}
+        title={"BALDOSA 60 X 60 "}
+      >
         <TablaResultadoBal60
           baldosa={Math.ceil(baldosa)}
           principales={Math.ceil(principales)}

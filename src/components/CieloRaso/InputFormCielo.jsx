@@ -68,7 +68,11 @@ function InputFormCielo() {
           />
         </form>
       </div>
-      <Modal isOpen={isOpenModal} closeModal={closeModal1}>
+      <Modal
+        isOpen={isOpenModal}
+        closeModal={closeModal1}
+        title={"PLANCHA CIELO RASO"}
+      >
         <TablaResultadoCielo
           Planchas={Math.ceil(Planchas)}
           Parante={Math.ceil(Parante)}

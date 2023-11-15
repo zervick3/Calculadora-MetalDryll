@@ -68,7 +68,7 @@ function InputFormRh() {
           />
         </form>
       </div>
-      <Modal isOpen={isOpenModal} closeModal={closeModal1}>
+      <Modal isOpen={isOpenModal} closeModal={closeModal1} title={"PLANCHA RH"}>
         <TablaResultadoRh
           Planchas={Math.ceil(Planchas)}
           Plancharh={Math.ceil(Plancharh)}

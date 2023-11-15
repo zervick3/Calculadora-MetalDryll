@@ -69,7 +69,11 @@ function InputFormFibrocemento() {
           />
         </form>
       </div>
-      <Modal isOpen={isOpenModal} closeModal={closeModal1}>
+      <Modal
+        isOpen={isOpenModal}
+        closeModal={closeModal1}
+        title={"PLANCHA SUPERBOARD"}
+      >
         <TablaResultadoFibro
           Planchas={Math.ceil(Planchas)}
           Parante={Math.ceil(Parante)}

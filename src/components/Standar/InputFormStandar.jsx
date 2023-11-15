@@ -68,7 +68,11 @@ function InputForm() {
           />
         </form>
       </div>
-      <Modal isOpen={isOpenModal} closeModal={closeModal1}>
+      <Modal
+        isOpen={isOpenModal}
+        closeModal={closeModal1}
+        title={"PLANCHA STANDAR"}
+      >
         <TablaResultadoSt
           Planchas={Math.ceil(Planchas)}
           Parante={Math.ceil(Parante)}

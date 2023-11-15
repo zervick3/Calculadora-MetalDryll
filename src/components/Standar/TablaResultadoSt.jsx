@@ -13,7 +13,7 @@ function TablaResultadoSt({
   lija,
 }) {
   return (
-    <div className="overflow-auto rounded-lg shadow">
+    <div className="overflow-auto rounded-lg shadow mt-9 ">
       <table className="w-full">
         <thead className="bg-gray-50 border-b-2 border-gray-200">
           <tr>
