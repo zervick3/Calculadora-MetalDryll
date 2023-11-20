@@ -114,6 +114,33 @@ function TablaResultadoFibro({
           </tr>
         </tbody>
       </table>
+      <div className="px-2 py-3">
+        <h5 className="text-red-700 font-black">Consideraciones:</h5>
+        <p className="px-4 ">
+          * Cálculo realizado con parantes cada 61mm para alturas no mayores a
+          3.50m.{" "}
+        </p>
+        <p className="px-4 ">
+          * Para fachadas exteriores se recomienda la placa Superboard SQ de
+          12mm
+        </p>
+        <p className="px-4 ">
+          * Para una pared interior con junta invisible se recomienda la placa
+          Superboard PRO de 6mm.
+        </p>
+
+        <h5 className="text-red-700 font-black">Observaciones:</h5>
+        <p className="px-4 ">
+          * Nunca masillar las placas en exteriores, dejar la junta visible y
+          sellar con Sika AT FACHADA
+        </p>
+        <p className="px-4 ">
+          * Masillar las placas Supeboard PRO en interiores, dejando una
+          dilatación de 3 milímetros, y aplicando una masilla para interiores y
+          una cinta de malla de fibra de vidrio.
+        </p>
+        <p className="px-4 ">* Los cuadros de consumos son estimados.</p>
+      </div>
     </div>
   );
 }

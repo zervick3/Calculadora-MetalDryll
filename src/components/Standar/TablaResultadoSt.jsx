@@ -102,6 +102,16 @@ function TablaResultadoSt({
           </tr>
         </tbody>
       </table>
+      <div className="px-2 py-3">
+        <h5 className="text-red-700 font-black">Consideraciones:</h5>
+        <p className="px-4 ">* Calculo realizado con parantes cada 61cm </p>
+        <p className="px-4 ">
+          * Tabique emplacado por ambas caras con Gyplac STD
+        </p>
+
+        <h5 className="text-red-700 font-black">Observaciones:</h5>
+        <p className="px-4 ">* Los cuadros de consumos son estimados.</p>
+      </div>
     </div>
   );
 }

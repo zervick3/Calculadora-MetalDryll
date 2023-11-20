@@ -91,6 +91,19 @@ function TablaResultadoBal60({
           </tr>
         </tbody>
       </table>
+      <div className="px-2 py-3">
+        <h5 className="text-red-700 font-black">Consideraciones:</h5>
+
+        <p className="px-4 ">
+          * Verifique la cantidad de ángulos perimetrales en función de las
+          medidas del cielo a construir.
+        </p>
+        <p className="px-4">
+          * Los cuadros de consumos son estimados, recomendamos realizar un
+          esquema del recinto con la modulación del cielo para determinar la
+          cantidad exacta de materiales.
+        </p>
+      </div>
     </div>
   );
 }

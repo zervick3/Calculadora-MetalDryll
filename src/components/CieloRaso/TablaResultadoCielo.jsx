@@ -99,6 +99,14 @@ function TablaResultadoCielo({
           </tr>
         </tbody>
       </table>
+      <div className="px-2 py-3">
+        <h5 className="text-red-700 font-black">Consideraciones:</h5>
+
+        <p className="px-4 ">* Calculo realizado con parantes cada 40 cm</p>
+
+        <h5 className="text-red-700 font-black">Observaciones:</h5>
+        <p className="px-4 ">* Los cuadros de consumos son estimados.</p>
+      </div>
     </div>
   );
 }
