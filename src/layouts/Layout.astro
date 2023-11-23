@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Background from "../components/Background.astro";
 import Footer from "../components/Footer.astro";
+import logo from "../components/img/logoMetaldryll.png";
 interface Props {
   title: string;
 }
@@ -15,12 +16,63 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Calculadora para calcular materiales de drywall , cielo razo , baldosa y muchas ,, Metaldryll, te ayuda con tus pryectos... mucho producto economico a la ventas  "
+      content="Conviertete en un experto en Sistema Drywall. Descubre los secretos de la construcción en seco y eleva tu expertise. Aprovecha nuestras capacitaciones gratuitas, descuentos exclusivos y beneficios para miembros. Únete a nuestro Club y forma parte de una comunidad dedicada al éxito en la construcción en seco. ¡Optimiza tus conocimientos y benefíciate de oportunidades exclusivas!  "
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#ef0054" />
+    <meta
+      name="keywords"
+      content="construcción en seco, experto en construcción, capacitación gratuita, descuentos exclusivos, beneficios para miembros"
+    />
+    <meta name="author" content="METALDRYLL" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://web.facebook.com/p/metaldryll-100055747674115/?paipv=0&eav=Afaio9o1-YrOaCM47xeXkAf5CAIOxBLVwKWnGlPDPkR_QmpxgC_hsJLk948mE1E4XyA&_rdc=1&_rdr"
+    />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Agrega metadatos de Open Graph para mejorar la presentación en redes sociales -->
+    <meta
+      property="og:title"
+      content="Conviértete en un Experto en Construcción en Seco | [METALDRYLL]"
+    />
+    <meta
+      property="og:description"
+      content="Únete a nuestro Club para obtener capacitaciones gratuitas, descuentos exclusivos y beneficios especiales."
+    />
+    <meta
+      property="og:image"
+      content="https://web.facebook.com/photo/?fbid=551444043390513&set=a.551443996723851"
+    />
+    <meta
+      property="og:url"
+      content="https://web.facebook.com/p/metaldryll-100055747674115/?paipv=0&eav=Afaio9o1-YrOaCM47xeXkAf5CAIOxBLVwKWnGlPDPkR_QmpxgC_hsJLk948mE1E4XyA&_rdc=1&_rdr"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Metadatos de Twitter Card para mejorar la presentación en Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Conviértete en un Experto en Construcción en Seco | [METALDRYLL]"
+    />
+    <meta
+      name="twitter:description"
+      content="Únete a nuestro Club para obtener capacitaciones gratuitas, descuentos exclusivos y beneficios especiales."
+    />
+    <meta
+      name="twitter:image"
+      content="https://web.facebook.com/p/metaldryll-100055747674115/?paipv=0&eav=Afaio9o1-YrOaCM47xeXkAf5CAIOxBLVwKWnGlPDPkR_QmpxgC_hsJLk948mE1E4XyA&_rdc=1&_rdr"
+    />
+    <style>
+      #icon {
+        border-radius: 50%;
+      }
+      logo {
+        border-radius: 50%;
+      }
+    </style>
+    <link rel="icon" type="image/svg+xml" href={logo.src} id="icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
