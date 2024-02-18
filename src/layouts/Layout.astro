@@ -4,6 +4,7 @@ import Background from "../components/Background.astro";
 import Footer from "../components/Footer.astro";
 import logo from "../components/img/logoMetaldryll.png";
 import { Analytics } from "@vercel/analytics/react";
+import Acesores from "../components/Acesores.astro";
 interface Props {
   title: string;
 }
@@ -97,6 +98,7 @@ const { title } = Astro.props;
     <Background />
     <Header />
     <slot />
+    <Acesores />
     <Footer />
     <Analytics />
   </body>
