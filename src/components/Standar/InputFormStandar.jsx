@@ -23,7 +23,6 @@ function InputForm() {
     e.preventDefault();
   };
   const Planchas = parseFloat(form.area) * 0.74;
-
   const Parante = parseFloat(form.area) * 0.8;
   const Riel = parseFloat(form.area) * 0.35;
   const tornillo = parseFloat(form.area) * 0.02;
