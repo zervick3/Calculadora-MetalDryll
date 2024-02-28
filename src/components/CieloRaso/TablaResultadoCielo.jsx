@@ -9,6 +9,7 @@ function TablaResultadoCielo({
   cintapapel,
   masilla,
   lija,
+  area,
 }) {
   return (
     <div className="overflow-auto rounded-lg shadow mt-9">
@@ -16,7 +17,11 @@ function TablaResultadoCielo({
         <thead className="bg-gray-50 border-b-2 border-gray-200">
           <tr>
             <th className="p-3 text-xs md:text-sm font-semibold tracking-wide text-left w-16 sm:w-full">
-              MATERIALES
+              MATERIALES -{" "}
+              {/* <span className="text-red-600 ">
+                {" "}
+                SUPERFICIE CALCULADA : {area}
+              </span> */}
             </th>
             <th className="p-3 text-xs md:text-sm font-semibold tracking-wide text-left">
               UNIDAD

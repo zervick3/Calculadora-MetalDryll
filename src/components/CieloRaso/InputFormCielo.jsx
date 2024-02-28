@@ -22,7 +22,7 @@ function InputFormCielo() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  const Planchas = parseFloat(form.area) * 0.74;
+  const Planchas = (parseFloat(form.area) * 0.74) / 2;
 
   const Parante = parseFloat(form.area) * 1.1;
   const Riel = parseFloat(form.area) * 0.35;
@@ -72,6 +72,7 @@ function InputFormCielo() {
         isOpen={isOpenModal}
         closeModal={closeModal1}
         title={"PLANCHA CIELO RASO"}
+        area={form.area}
       >
         <TablaResultadoCielo
           Planchas={Math.ceil(Planchas)}
@@ -84,6 +85,7 @@ function InputFormCielo() {
           cintapapel={Math.ceil(cintapapel)}
           masilla={Math.ceil(masilla)}
           lija={Math.ceil(lija)}
+          area={form.area}
         />
       </Modal>
     </div>
