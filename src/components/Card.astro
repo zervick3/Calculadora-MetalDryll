@@ -1,0 +1,142 @@
+---
+import { card } from "../data/card";
+---
+
+<section class="main">
+  <h1>Recomendamos estos Productos</h1>
+  <ul class="cards">
+    {
+      card.map((cards) => (
+        <li class="cards_item">
+          <article class="card">
+            <div class="card_image">
+              <img src={cards.img} alt={cards.alt} />
+            </div>
+
+            <div class="card_content grid gap-3">
+              <h2>{cards.title}</h2>
+              <p>{cards.parrafo}</p>
+              <a
+                class="btn card_btn text-center"
+                target="_blank"
+                href={cards.inf}
+              >
+                MÁS INFORMACIÓN
+              </a>
+            </div>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .main {
+    background-color: #ecf9ff;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .card_image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .btn {
+    color: #141212;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background: transparent;
+  }
+
+  .btn:hover {
+    background-color: #ef0054;
+    color: #ffffff;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+
+  /* @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  } */
+
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .card_content {
+    padding: 1rem;
+    background: white;
+  }
+  .card_content h2 {
+    position: relative;
+  }
+  .main .card_content h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background: #f00;
+    z-index: 1;
+  }
+  .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+
+  .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+  }
+</style>
