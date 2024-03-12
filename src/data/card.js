@@ -31,4 +31,32 @@ export const card = [
       "Nuestra placa de fibrocemento resistente a la humedad e impacto para la elaboración de pared...",
     inf: "https://static.eternit.pe/cdf/productos/pdf/ficha-tecnica-paredes-exteriores-8-mm-final-3_20210518085246.pdf",
   },
+  {
+    title: "Gyplac Ciel 7mm",
+    img: "https://static.eternit.pe/cdf/productos/gyplac-ciel.jpg",
+    alt: "Gyplac Ciel 7mm",
+    parrafo: "La placa de yeso ideal para cielos rasos",
+    inf: "https://static.eternit.pe/cdf/productos/pdf/ficha-tecnica-ciel-70mm.pdf",
+  },
+  {
+    title: "Lana de fibra de vidrio",
+    img: "https://static.eternit.pe/cdf/productos/prod_lana.jpg",
+    alt: "Lana de fibra de vidrio",
+    parrafo: "Producto indicado para la aislación térmica y absorción acústica",
+    inf: "https://media.gyplac.com/pi495485/original/1262231612/ficha-tecnica--lana-fibra-de-vidrio.pdf",
+  },
+  {
+    title: "Perfiles y rieles metálicos",
+    img: "https://static.eternit.pe/cdf/productos/perfiles-rieles.jpg",
+    alt: "Perfiles y rieles metálicos",
+    parrafo: "Para el armado de estructuras para paredes y cielos rasos",
+    inf: "https://www.tupemesa.com.pe/wp-content/uploads/2022/04/ficha-tecnica-parantes-tupemesa.pdf",
+  },
+  {
+    title: "Tornillos y clavos",
+    img: "https://static.eternit.pe/cdf/productos/tornillo-drywall.jpg",
+    alt: "tornillos y clavos",
+    parrafo: "Para la fijación y anclaje de parantes, rieles y planchas",
+    inf: "https://sudrywall.com/wp-content/uploads/2021/08/Ficha-Tecnica-Tornillo-de-Placa.pdf",
+  },
 ];
