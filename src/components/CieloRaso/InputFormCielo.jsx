@@ -22,7 +22,7 @@ function InputFormCielo() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  const Planchas = (parseFloat(form.area) * 0.74) / 2;
+  const Planchas = (parseFloat(form.area) * 2.9768) / 2;
 
   const Parante = parseFloat(form.area) * 1.1;
   const Riel = parseFloat(form.area) * 0.35;
